@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagenes/bios.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilo/style.css">
+    <title>Nuestro catalogo</title>
+</head>
+
+<body class="body__productos">
+
+    <header class="header__productos"><!-- Apartir de aca para pegar en los demas html debo cambiar el nombre de esta etiqueta-->
+        
+        <div class="header__content">
+            
+            <div class="header__logo"> 
+                <img src="../imagenes/logo.png" alt="Logo">
+            </div>
+
+            <div class="header__nav">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./productos.html">Productos</a>
+                            <ul>
+                                <li><a href="./productos.html#tm">TV/Monitores</a></li>
+                                <li><a href="./productos.html#cc">CPU/Consolas</a></li>
+                                <li><a href="./productos.html#co">Componentes/Otros</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./precios.html">Precios</a></li>
+                        <li><a href="./contactos.html">Contactos</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        
+    </header>
+
+    <div class="content__productos">
+
+        <section class="section__productos">
+
+            <div class="section__form">
+    
+                <h2>Inicia secion y conoce mas acerca de nosotros</h2>
+    
+                <form>
+    
+                    <div class="grupo">
+                        <input type="email" name="e-mail" id="mail" required>
+                        <label for="">E-mail</label>
+                    </div>
+    
+                    <div class="grupo">
+                        <input type="password" name="contra" id="password" required>
+                        <label for="">Password</label>
+                    </div>
+    
+                    <div class="button">
+                        <input type="submit" value="Iniciar" id="ingresar"> 
+                    </div>
+    
+                </form>
+    
+                <p>No tenes cuenta?<a href="./apartados/contactos.html">Registrate aqui</a></p>
+    
+            </div>
+
+        </section>
+
+        <section id="section__pantallas"> 
+        
+            <h2 id="tm">TV y monitores</h2>
+    
+            <div class="section__pantallas--productos">
+                <figure>
+                    <img src="../imagenes/TV1.png" alt="Television Smart Xiaomi" width="350px" height="300px">
+                    <p>$120.000</p>
+                    <figcaption>Television Smart Xiaomi 75&quot;</figcaption>
+                    <button class="button__productos"><span>Añadir al carrito</span></button>
+                </figure>
+        
+                <figure>
+                    <img src="../imagenes/TV2.png" alt="Television Smart RCA" width="350px" height="300px">
+                    <p>$80.000</p>
+                    <figcaption>Television Smart RCA 43&quot;</figcaption>
+                    <button class="button__productos"><span>Añadir al carrito</span></button>
+                </figure>
+        
+                <figure>
+                    <img src="../imagenes/Monitor1.png" alt="Monitor Samsung" width="350px" height="300px">
+                    <p>$50.000</p>
+                    <figcaption>Monitor Samsung 28&quot;</figcaption>
+                    <button class="button__productos"><span>Añadir al carrito</span></button>
+                </figure>
+            </div>
+    
+        </section>
+    
+        <section id="section__dispositivos">
+            <h2 id="cc">Computadoras y consolas</h2>
+    
+        <div class="section__dispositivos--productos">
+            <figure>
+                <img src="../imagenes/cpu.png" alt="CPU Gamer Xtream" width="350px" height="300px">
+                <p>$100.000</p>
+                <figcaption>CPU Gamer Xtream Intel i7</figcaption>
+                <button class="button__productos"><span>Añadir al carrito</span></button>
+            </figure>
+    
+            <figure>
+                <img src="../imagenes/PS5.png" alt="PlayStation 5" width="350px" height="300px">
+                <p>$150.000</p>
+                <figcaption>PlayStation 5 Standard</figcaption>
+                <button class="button__productos"><span>Añadir al carrito</span></button>
+            </figure>
+    
+            <figure>
+                <img src="../imagenes/nintendo.png" alt="Nintendo Switch" width="350px" height="300px">
+                <p>$75.000</p>
+                <figcaption>Consola Nintendo Switch</figcaption>
+                <button class="button__productos"><span>Añadir al carrito</span></button>
+            </figure>
+        </div>
+            
+        </section>
+    
+        <section id="section__otros">
+            <h2 id="co">Componentes y otros</h2>
+            <div class="section__otros--productos">
+                <figure>
+                    <img src="../imagenes/memoria.png" alt="Memoria Ram" width="350px" height="300px">
+                    <p>$15.000</p>
+                    <figcaption>Memoria Ram Ddr4</figcaption>
+                    <button class="button__productos"><span>Añadir al carrito</span></button>
+                </figure>
+        
+                <figure>
+                    <img src="../imagenes/procesador.png" alt="Procesador Ryzen" width="350px" height="300px">
+                    <p>$48.000</p>
+                    <figcaption>Procesador AMD Ryzen 7</figcaption>
+                    <button class="button__productos"><span>Añadir al carrito</span></button>
+                </figure>
+        
+                <figure>
+                    <img src="../imagenes/joystick.png" alt="Joystick PS5" width="350px" height="300px">
+                    <p>$14.000</p>
+                    <figcaption>Joystick PS5 Negro/Blanco</figcaption>
+                    <button class="button__productos"><span>Añadir al carrito</span></button>
+                </figure>
+            </div>
+            
+        </section>
+
+    </div>
+    
+
+    <footer class="footer__productos">
+
+        <div class="footer__nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./apartados/nosotros.html">Nosotros</a></li>
+                    <li><a href="./apartados/productos.html">Productos</a></li>
+                    <li><a href="./apartados/precios.html">Precios</a></li>
+                    <li><a href="./apartados/contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer__redes">
+
+            <div class="footer__logo"> 
+                <img src="../imagenes/logo.png" alt="Logo">
+            </div>
+
+            <a href="https://www.instagram.com/" title="Intagram empresa" target="_blank"><img src="../imagenes/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/" title="Facebook empresa" target="_blank"><img src="../imagenes/facebook.png" alt="Facebook"></a>
+            <a href="https://www.snapchat.com/" title="Snapchat empresa" target="_blank"><img src="../imagenes/snapchat.png" alt="Snapchat" ></a>
+            <a href="https://web.whatsapp.com/" title="Whatsapp empresa" target="_blank"><img src="../imagenes/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://www.youtube.com/" title="Youtube empresa" target="_blank"><img src="../imagenes/youtube.png" alt="Youtube"></a>
+        </div>
+
+        <div class="footer__info">
+            <p>Tecno Devices Company</p>
+            <p>1600 Amphitheatre Pkwy, Mountain View, CA 94043, Estados Unidos</p>
+            <p>info@tecnodevices.com</p>
+            <p>+54 9 11-1234-5678</p>
+        </div>
+
+    </footer> 
+
+</body>
+</html>
