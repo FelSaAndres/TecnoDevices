@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="../imagenes/bios.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../estilo/style.css">
     <title>Nuestro catalogo</title>
 </head>
@@ -75,91 +77,254 @@
 
         </section>
 
-        <section id="section__pantallas"> 
-        
-            <h2 id="tm">TV y monitores</h2>
+        <div class="container-fluid my-5 contenedor">
+            <h2 id="tm" class="text-center fw-bold display-1 mb-5">TV y<span class="text-danger"> monitores</span></h2>
+            <div class="row">
+                <div class="col-12 m-auto">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow">
+                                <img src="../imagenes/TV1.png" alt="TV Xiaomi" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h3>$120.000</h3>
+                                        <p>Television Smart Xiaomi 75&quot;</p>
+                                        <button class="button__productos"><span>Añadir al carrito</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
     
-            <div class="section__pantallas--productos">
-                <figure>
-                    <img src="../imagenes/TV1.png" alt="Television Smart Xiaomi" width="350px" height="300px">
-                    <p>$120.000</p>
-                    <figcaption>Television Smart Xiaomi 75&quot;</figcaption>
-                    <button class="button__productos"><span>Añadir al carrito</span></button>
-                </figure>
-        
-                <figure>
-                    <img src="../imagenes/TV2.png" alt="Television Smart RCA" width="350px" height="300px">
-                    <p>$80.000</p>
-                    <figcaption>Television Smart RCA 43&quot;</figcaption>
-                    <button class="button__productos"><span>Añadir al carrito</span></button>
-                </figure>
-        
-                <figure>
-                    <img src="../imagenes/Monitor1.png" alt="Monitor Samsung" width="350px" height="300px">
-                    <p>$50.000</p>
-                    <figcaption>Monitor Samsung 28&quot;</figcaption>
-                    <button class="button__productos"><span>Añadir al carrito</span></button>
-                </figure>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="../imagenes/TV2.png" alt="TV RCA" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h3>$80.000</h3>
+                                        <p>Television Smart RCA 43&quot;</p>
+                                        <button class="button__productos"><span>Añadir al carrito</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="../imagenes/TV3.png" alt="TV LG" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h3>$45.000</h3>
+                                        <p>Television Smart LG 32&quot;</p>
+                                        <button class="button__productos"><span>Añadir al carrito</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="../imagenes/Monitor1.png" alt="Monitor Samsung" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h3>$50.000</h3>
+                                        <p>Monitor Samsung 28&quot;</p>
+                                        <button class="button__productos"><span>Añadir al carrito</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="../imagenes/Monitor2.png" alt="Monitor Philips" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h3>$43.000</h3>
+                                        <p>Monitor MMD Philips 27&quot;</p>
+                                        <button class="button__productos"><span>Añadir al carrito</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="../imagenes/Monitor3.png" alt="Monitor Huawei" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h3>$19.000</h3>
+                                        <p>Monitor Huawei Display 23,8&quot;</p>
+                                        <button class="button__productos"><span>Añadir al carrito</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
             </div>
-    
-        </section>
-    
-        <section id="section__dispositivos">
-            <h2 id="cc">Computadoras y consolas</h2>
-    
-        <div class="section__dispositivos--productos">
-            <figure>
-                <img src="../imagenes/cpu.png" alt="CPU Gamer Xtream" width="350px" height="300px">
-                <p>$100.000</p>
-                <figcaption>CPU Gamer Xtream Intel i7</figcaption>
-                <button class="button__productos"><span>Añadir al carrito</span></button>
-            </figure>
-    
-            <figure>
-                <img src="../imagenes/PS5.png" alt="PlayStation 5" width="350px" height="300px">
-                <p>$150.000</p>
-                <figcaption>PlayStation 5 Standard</figcaption>
-                <button class="button__productos"><span>Añadir al carrito</span></button>
-            </figure>
-    
-            <figure>
-                <img src="../imagenes/nintendo.png" alt="Nintendo Switch" width="350px" height="300px">
-                <p>$75.000</p>
-                <figcaption>Consola Nintendo Switch</figcaption>
-                <button class="button__productos"><span>Añadir al carrito</span></button>
-            </figure>
         </div>
-            
-        </section>
-    
-        <section id="section__otros">
-            <h2 id="co">Componentes y otros</h2>
-            <div class="section__otros--productos">
-                <figure>
-                    <img src="../imagenes/memoria.png" alt="Memoria Ram" width="350px" height="300px">
-                    <p>$15.000</p>
-                    <figcaption>Memoria Ram Ddr4</figcaption>
-                    <button class="button__productos"><span>Añadir al carrito</span></button>
-                </figure>
-        
-                <figure>
-                    <img src="../imagenes/procesador.png" alt="Procesador Ryzen" width="350px" height="300px">
-                    <p>$48.000</p>
-                    <figcaption>Procesador AMD Ryzen 7</figcaption>
-                    <button class="button__productos"><span>Añadir al carrito</span></button>
-                </figure>
-        
-                <figure>
-                    <img src="../imagenes/joystick.png" alt="Joystick PS5" width="350px" height="300px">
-                    <p>$14.000</p>
-                    <figcaption>Joystick PS5 Negro/Blanco</figcaption>
-                    <button class="button__productos"><span>Añadir al carrito</span></button>
-                </figure>
-            </div>
-            
-        </section>
 
-    </div>
+        <div class="container-fluid my-5 contenedor">
+            <h2 id="cc" class="text-center fw-bold display-1 mb-5">Computadoras y<span class="text-danger"> consolas</span></h2>
+            <div class="row">
+                <div class="col-12 m-auto">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow">
+                                <img src="../imagenes/cpu.png" alt="CPU Gamer Xtream" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h3>$100.000</h3>
+                                        <p>CPU Gamer Xtream Intel I7</p>
+                                        <button class="button__productos"><span>Añadir al carrito</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="../imagenes/cpu2.png" alt="PlayStation 5" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h3>$300.000</h3>
+                                        <p>CPU Gamer Ryzen 5</p>
+                                        <button class="button__productos"><span>Añadir al carrito</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="../imagenes/Laptop.png" alt="Notebook Gamer" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h3>$96.000</h3>
+                                        <p>Notebook Gamer Asus Intel I5</p>
+                                        <button class="button__productos"><span>Añadir al carrito</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="../imagenes/PS5.png" alt="PlayStation 5" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h3>$150.000</h3>
+                                        <p>PlayStation 5 Standard</p>
+                                        <button class="button__productos"><span>Añadir al carrito</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="../imagenes/xbox.png" alt="Xbox" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h3>$170.000</h3>
+                                        <p>Consola Xbox Serie X</p>
+                                        <button class="button__productos"><span>Añadir al carrito</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="../imagenes/nintendo.png" alt="Nintendo Switch" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h3>$75.000</h3>
+                                        <p>Consola Nintendo Switch</p>
+                                        <button class="button__productos"><span>Añadir al carrito</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid my-5 contenedor">
+            <h2 id="co" class="text-center fw-bold display-1 mb-5">Componentes y<span class="text-danger"> otros</span></h2>
+            <div class="row">
+                <div class="col-12 m-auto">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow">
+                                <img src="../imagenes/memoria.png" alt="Memoria Ddr4" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h3>$15.000</h3>
+                                        <p>Memoria Ram Ddr4</p>
+                                        <button class="button__productos"><span>Añadir al carrito</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="../imagenes/procesador.png" alt="Procesador Ryzen" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h3>$48.000</h3>
+                                        <p>Procesador AMD Ryzen 7</p>
+                                        <button class="button__productos"><span>Añadir al carrito</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <img src="../imagenes/joystick.png" alt="Joystick PS5" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h3>$14.000</h3>
+                                        <p>Joystick PS5 Negro/Blanco</p>
+                                        <button class="button__productos"><span>Añadir al carrito</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 shadow">
+                            <img src="../imagenes/teclado.png" alt="Teclado Mecanico Redragon" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h3>$3.000</h3>
+                                    <p>Redragon Teclado Gamer Mecánico</p>
+                                    <button class="button__productos"><span>Añadir al carrito</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow">
+                            <img src="../imagenes/placavideo.png" alt="Tarjeta grafica" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h3>$52.000</h3>
+                                    <p>Tarjeta grafica NVIDIA G-Force</p>
+                                    <button class="button__productos"><span>Añadir al carrito</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow">
+                            <img src="../imagenes/joystick_xbox.png" alt="Joystick Xbox" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h3>$17.000</h3>
+                                    <p>Joystick Xbox Serie X</p>
+                                    <button class="button__productos"><span>Añadir al carrito</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
     
 
     <footer class="bg-dark text-white pt-5 pb-4 footer__productos">
@@ -278,7 +443,29 @@
 
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
 </body>
 </html>
