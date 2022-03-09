@@ -1,0 +1,18 @@
+.header__info--inicio{
+    
+    color: white;
+    font-weight: 700;
+    margin-top: 4%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    p{
+        margin: 15px 0px 15px 0px;
+    }
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.651);
+        border-top: 1px outset;
+        border-radius: 5px;
+    }
+}

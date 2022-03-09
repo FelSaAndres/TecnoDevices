@@ -1,0 +1,28 @@
+.section__content--inicio{
+    margin-top: 50px;
+    h1{
+        font-size: 120px;
+        font-family: Copperplate, "Copperplate Gothic Light", fantasy; 
+        color: white;
+        text-align: center;
+        top: 30%;
+    }
+    p{
+        font-size: 30px;
+        font-family: Copperplate, "Copperplate Gothic Light", fantasy; 
+        color: white;
+        text-align: center;
+        left: 13%;
+        bottom: 20%;
+    }
+    hr{
+        margin: 30px 350px;
+    }
+    iframe{
+        margin: 15px 0px 0px 180px;
+        opacity: 0.7;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
