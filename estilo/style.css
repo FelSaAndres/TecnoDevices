@@ -23,8 +23,6 @@
     width: 250px;
     height: 160px;
     margin-left: 30px; }
-  .header__logandnav:hover {
-    background-color: rgba(41, 40, 40, 0.171); }
 
 .header__info--inicio {
   color: white;
@@ -106,6 +104,67 @@
   color: white;
   font-weight: 500; }
 
+
+.section__cartas--inicio{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  font-family: sans-serif;
+}
+
+hr{
+  margin: 40px 350px;
+}
+
+.card{
+  margin: 20px;
+  width: 280px;
+  height: 450px;
+  border-radius: 5px;
+  box-shadow: 3px 5px 5px rgba(3, 31, 51, 0.8);
+}
+
+.carta1{
+  background: url(../imagenes/card.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.carta2{
+  background: url(../imagenes/card2.jpg);
+  background-size: cover;
+  
+}
+
+.carta3{
+  background: url(../imagenes/card3.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: .5s;
+}
+
+.content h2, a{
+  color: rgba(255, 255, 255, .8);
+}
+
+.card:hover .content{
+  opacity: 1;
+}
+
 @media screen and (min-width: 0px) and (max-width: 320px) {
   .header__logandnav {
     display: flex;
@@ -150,7 +209,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.753); } }
+    background-color: rgba(0, 0, 0, 0.753); } 
+  .section__content--inicio hr {
+    margin: 30px 100px;} 
+  .section__cartas--inicio{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    font-family: sans-serif;
+  }
+  .card{
+    margin: 20px;
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px rgba(3, 31, 51, 0.8);
+    }
+}
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
   .header__logandnav {
@@ -192,7 +270,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.753); } }
+    background-color: rgba(0, 0, 0, 0.753); }
+  .section__content--inicio hr {
+    margin: 30px 100px;} 
+  .section__cartas--inicio{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    font-family: sans-serif;
+  }
+  .card{
+    margin: 20px;
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px rgba(3, 31, 51, 0.8);
+  }
+}
 
 @media screen and (min-width: 376px) and (max-width: 425px) {
   .header__logandnav {
@@ -233,7 +330,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.753); } }
+    background-color: rgba(0, 0, 0, 0.753); }
+  .section__content--inicio hr {
+    margin: 30px 100px;}
+  .section__cartas--inicio{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    font-family: sans-serif;
+  }
+  .card{
+    margin: 20px;
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px rgba(3, 31, 51, 0.8);
+  }
+}
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .section__content--inicio h1 {
@@ -278,7 +394,10 @@
   overflow-x: hidden;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header__nosotros   header__nosotros  header__nosotros" "section__nosotros  section__nosotros section__nosotros" "footer__nosotros   footer__nosotros  footer__nosotros"; }
+  grid-template-areas: "header__nosotros   header__nosotros  header__nosotros"
+ "section__nosotros  section__nosotros section__nosotros"
+ "section__nosotros2  section__nosotros2 section__nosotros2"
+ "footer__nosotros   footer__nosotros  footer__nosotros"; }
 
 .header__nosotros {
   grid-area: header__nosotros;
@@ -558,6 +677,161 @@ input:valid ~ label {
 .section__nosotros--texto2 a:hover, .section__nosotros--texto3 a:hover {
   transform: rotate(360deg) scale(1.3, 1.3); }
 
+
+.section__nosotros2{
+  grid-area: section__nosotros2;
+  background: url(../fondos/fondonosotros.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
+}
+
+.nosotros__card {
+  background: #fff;
+  border: 4px;
+  box-shadow: 0px 14px 80px rgba(131, 135, 224, 0.5);
+  width: 1000px;
+  height: 370px;
+  margin: 70px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  position: relative;
+}
+
+.nosotros__card h2 {
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.nosotros__card .title {
+  padding: 1rem;
+  text-align: right;
+  color: #2d7ef9;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.desc p{
+  font-size: 13px;
+}
+
+.img-avatar{
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  border-radius: 50%;
+  border: 6px solid white;
+  top: 15px;
+  left: 170px;
+}
+
+.img-avatar img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.portada {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.portada img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.card-text {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.title-total {
+  padding: 2.5em 1.5em 1.5em 1.5em;
+}
+
+path {
+  fill: white;
+}
+
+.img-portada {
+  width: 100%;
+}
+
+.nosotros__card .desc {
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.nosotros__card .actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+button {
+  border: none;
+  background: none;
+  font-size: 25px;
+  color: #2d7ef9;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  color: #0365f6;
+}
+
+.nosotros__descripcion p{
+  color: white;
+  font-size: 25px;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  text-shadow: 0px 5px 15px  rgba(131, 135, 224, 0.5);
+}
+
+.nosotros__descripcion i{
+  font-size: 30px;
+  color: rgb(75, 194, 75);
+  transition: .3s;
+}
+
+.nosotros__descripcion button:hover i{
+  color: green;
+}
+
+.nosotros__descripcion button:hover span{
+  color: green;
+}
+
+.nosotros__descripcion a{
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+  margin-left: 120px;
+}
+
+.nosotros__descripcion span{
+  color: rgb(75, 194, 75);
+  font-family: 'Times New Roman', Times, serif;
+  transition: .3s;
+}
+
 @media screen and (min-width: 0px) and (max-width: 320px) {
   .header__content {
     display: flex;
@@ -621,7 +895,126 @@ input:valid ~ label {
   .footer__info {
     display: flex;
     flex-direction: column;
-    text-align: center; } }
+    text-align: center; } 
+  
+    .section__nosotros2{
+      grid-area: section__nosotros2;
+      width: 100%;
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nosotros__card {
+      background: #fff;
+      border: 4px;
+      box-shadow: 0px 14px 80px rgba(131, 135, 224, 0.5);
+      width: 800px;
+      height: 400px;
+      margin: 20px;
+      display: flex;
+      flex-direction: row;
+      border-radius: 15px;
+      position: relative;
+      }
+  
+    .img-avatar{
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      border-radius: 50%;
+      border: 6px solid white;
+      top: 15px;
+      left: 50px;
+    }
+  
+    .nosotros__descripcion a{
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 5px;
+      margin-left: 60px;
+    }
+    
+    .nosotros__card h2 {
+      margin: 0;
+      padding: 0 1rem;
+    }
+    
+    .nosotros__card .title {
+      padding: 1rem;
+      text-align: right;
+      color: #2d7ef9;
+      font-weight: bold;
+      font-size: 10px;
+    }
+    
+    .desc p{
+      font-size: 9.5px;
+      font-weight: bold;
+    }
+    
+    .portada {
+      width: 100%;
+      height: 92.5%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      background-position: bottom center;
+      background-size: cover;
+    }
+    
+    .portada img {
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+    
+    .nosotros__card .actions {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      padding: 0.5rem 1rem;
+    }
+    
+    button {
+      border: none;
+      background: none;
+      font-size: 20px;
+      color: #2d7ef9;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    .nosotros__descripcion{
+      margin-bottom: 15px;
+    }
+
+    .nosotros__descripcion p{
+      color: white;
+      font-size: 25px;
+      text-align: center;
+      font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+      text-shadow: 0px 5px 15px  rgba(131, 135, 224, 0.5);
+    }
+    
+    .nosotros__descripcion a{
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 5px;
+      margin-left: 40px;
+    }
+    
+    .nosotros__descripcion span{
+      color: rgb(75, 194, 75);
+      font-family: 'Times New Roman', Times, serif;
+      transition: .3s;
+    }
+  
+  }
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
   .header__content {
@@ -683,7 +1076,126 @@ input:valid ~ label {
   .footer__info {
     display: flex;
     flex-direction: column;
-    text-align: center; } }
+    text-align: center; } 
+  
+    .section__nosotros2{
+      grid-area: section__nosotros2;
+      width: 100%;
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nosotros__card {
+      background: #fff;
+      border: 4px;
+      box-shadow: 0px 14px 80px rgba(131, 135, 224, 0.5);
+      width: 800px;
+      height: 400px;
+      margin: 30px;
+      display: flex;
+      flex-direction: row;
+      border-radius: 15px;
+      position: relative;
+      }
+  
+    .img-avatar{
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      border-radius: 50%;
+      border: 6px solid white;
+      top: 15px;
+      left: 60px;
+    }
+  
+    .nosotros__descripcion a{
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 5px;
+      margin-left: 60px;
+    }
+    
+    .nosotros__card h2 {
+      margin: 0;
+      padding: 0 1rem;
+    }
+    
+    .nosotros__card .title {
+      padding: 1rem;
+      text-align: right;
+      color: #2d7ef9;
+      font-weight: bold;
+      font-size: 10px;
+    }
+    
+    .desc p{
+      font-size: 9.5px;
+      font-weight: bold;
+    }
+    
+    .portada {
+      width: 100%;
+      height: 95.5%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      background-position: bottom center;
+      background-size: cover;
+    }
+    
+    .portada img {
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+    
+    .nosotros__card .actions {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      padding: 0.5rem 1rem;
+    }
+    
+    button {
+      border: none;
+      background: none;
+      font-size: 20px;
+      color: #2d7ef9;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    .nosotros__descripcion{
+      margin-bottom: 15px;
+    }
+
+    .nosotros__descripcion p{
+      color: white;
+      font-size: 25px;
+      text-align: center;
+      font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+      text-shadow: 0px 5px 15px  rgba(131, 135, 224, 0.5);
+    }
+    
+    .nosotros__descripcion a{
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 5px;
+      margin-left: 70px;
+    }
+    
+    .nosotros__descripcion span{
+      color: rgb(75, 194, 75);
+      font-family: 'Times New Roman', Times, serif;
+      transition: .3s;
+    }
+  
+  }
 
 @media screen and (min-width: 376px) and (max-width: 425px) {
   .header__content {
@@ -741,7 +1253,126 @@ input:valid ~ label {
   .footer__info {
     display: flex;
     flex-direction: column;
-    text-align: center; } }
+    text-align: center; } 
+  
+    .section__nosotros2{
+      grid-area: section__nosotros2;
+      width: 100%;
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nosotros__card {
+      background: #fff;
+      border: 4px;
+      box-shadow: 0px 14px 80px rgba(131, 135, 224, 0.5);
+      width: 800px;
+      height: 400px;
+      margin: 40px;
+      display: flex;
+      flex-direction: row;
+      border-radius: 15px;
+      position: relative;
+      }
+  
+    .img-avatar{
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      border-radius: 50%;
+      border: 6px solid white;
+      top: 15px;
+      left: 60px;
+    }
+  
+    .nosotros__descripcion a{
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 5px;
+      margin-left: 60px;
+    }
+    
+    .nosotros__card h2 {
+      margin: 0;
+      padding: 0 1rem;
+    }
+    
+    .nosotros__card .title {
+      padding: 1rem;
+      text-align: right;
+      color: #2d7ef9;
+      font-weight: bold;
+      font-size: 10px;
+    }
+    
+    .desc p{
+      font-size: 9.5px;
+      font-weight: bold;
+    }
+    
+    .portada {
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      background-position: bottom center;
+      background-size: cover;
+    }
+    
+    .portada img {
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+    
+    .nosotros__card .actions {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      padding: 0.5rem 1rem;
+    }
+    
+    button {
+      border: none;
+      background: none;
+      font-size: 20px;
+      color: #2d7ef9;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    .nosotros__descripcion{
+      margin-bottom: 15px;
+    }
+
+    .nosotros__descripcion p{
+      color: white;
+      font-size: 25px;
+      text-align: center;
+      font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+      text-shadow: 0px 5px 15px  rgba(131, 135, 224, 0.5);
+    }
+    
+    .nosotros__descripcion a{
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 5px;
+      margin-left: 100px;
+    }
+    
+    .nosotros__descripcion span{
+      color: rgb(75, 194, 75);
+      font-family: 'Times New Roman', Times, serif;
+      transition: .3s;
+    }
+  
+  }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .header__nosotros {
@@ -760,7 +1391,45 @@ input:valid ~ label {
     width: 70%;
     top: 22%;
     left: 15%;
-    margin-right: 40px; } }
+    margin-right: 40px; } 
+  
+    .section__nosotros2{
+      grid-area: section__nosotros2;
+      width: 100%;
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nosotros__descripcion{
+      margin-bottom: 15px;
+    }
+
+    .nosotros__descripcion p{
+      color: white;
+      font-size: 28px;
+      text-align: center;
+      font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+      text-shadow: 0px 5px 15px  rgba(131, 135, 224, 0.5);
+    }
+    
+    .nosotros__descripcion a{
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 5px;
+      margin-left: 275px;
+    }
+    
+    .nosotros__descripcion span{
+      color: rgb(75, 194, 75);
+      font-family: 'Times New Roman', Times, serif;
+      transition: .3s;
+    }
+  
+  }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .section__form {
@@ -776,14 +1445,104 @@ input:valid ~ label {
   .section__nosotros--texto2 a {
     width: 70%; }
   .section__nosotros--texto3 a {
-    width: 70%; } }
+    width: 70%; }
+  
+  .nosotros__card {
+    background: #fff;
+    border: 4px;
+    box-shadow: 0px 14px 80px rgba(131, 135, 224, 0.5);
+    width: 1150px;
+    height: 400px;
+    margin: 70px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    position: relative;
+    }
+
+  .img-avatar{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    border-radius: 50%;
+    border: 6px solid white;
+    top: 15px;
+    left: 120px;
+  }
+
+  .nosotros__descripcion a{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 60px;
+  }
+  
+  .nosotros__card h2 {
+    margin: 0;
+    padding: 0 1rem;
+  }
+  
+  .nosotros__card .title {
+    padding: 1rem;
+    text-align: right;
+    color: #2d7ef9;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .desc p{
+    font-size: 14px;
+  }
+  
+  .portada {
+    width: 100%;
+    height: 98.5%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-position: bottom center;
+    background-size: cover;
+  }
+  
+  .portada img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  .nosotros__card .desc {
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    text-align: justify;
+  }
+  
+  .nosotros__card .actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+  
+  button {
+    border: none;
+    background: none;
+    font-size: 25px;
+    color: #2d7ef9;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  }
 
 .body__productos {
   display: grid;
   overflow-x: hidden;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
-  grid-template-areas: "header__productos header__productos header__productos" "content__productos content__productos content__productos" "footer__productos footer__productos footer__productos"; }
+  grid-template-areas: "header__productos header__productos header__productos"
+ "content__productos content__productos content__productos"
+ "footer__productos footer__productos footer__productos"; }
 
 .header__productos {
   grid-area: header__productos;
@@ -901,7 +1660,9 @@ input:valid ~ label {
   overflow-x: hidden;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
-  grid-template-areas: "header__precios header__precios header__precios" "section__precios section__precios section__precios" "footer__precios footer__precios footer__precios"; }
+  grid-template-areas: "header__precios header__precios header__precios"
+ "section__precios section__precios section__precios"
+ "footer__precios footer__precios footer__precios"; }
 
 .header__precios {
   grid-area: header__precios;
