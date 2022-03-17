@@ -118,7 +118,7 @@ hr{
   margin: 40px 350px;
 }
 
-.card{
+.card__inicio{
   margin: 20px;
   width: 280px;
   height: 450px;
@@ -161,7 +161,7 @@ hr{
   color: rgba(255, 255, 255, .8);
 }
 
-.card:hover .content{
+.card__inicio:hover .content{
   opacity: 1;
 }
 
