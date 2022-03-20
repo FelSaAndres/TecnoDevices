@@ -1,7 +1,9 @@
-@import "inicioheader";
-@import "iniciolognav";
-@import "iniciofooter";
-@import "sectioninicio";
+@import "1inicioheader";
+@import "1iniciolognav";
+@import "1sectioninicio";
+@import "1iniciocartas";
+@import "1iniciofooter";
+@import "2nosotrosheader";
 
 *{
     padding: 0;
@@ -54,8 +56,6 @@
     color: white;
     font-weight: 500;
 }
-
-
 
 @media screen and (min-width: 0px) and (max-width: 320px){
     
@@ -365,38 +365,6 @@
     grid-template-areas: "header__nosotros   header__nosotros  header__nosotros"
                          "section__nosotros  section__nosotros section__nosotros"
                          "footer__nosotros   footer__nosotros  footer__nosotros";
-}
-
-.header__nosotros{
-    grid-area: header__nosotros;
-    background: url(../fondos/fondo2.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-    height: 610px;
-    
-}
-
-.header__content{
-    
-    height: 100px;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__content:hover{
-    background-color: rgba(41, 40, 40, 0.171);
-}
-
-.header__logo img{
-
-    width: 250px;
-    height: 160px;
-    margin-left: 30px;
-    
 }
 
 .header__nav ul{
