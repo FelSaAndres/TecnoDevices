@@ -75,34 +75,34 @@
 
         <div class="section__precios--content">
 
-            <p>Tenemos grandes beneficios a nuestros clientes que paguen con los siguientes bancos</p>
+            <h2>Beneficos y descuentos</h2>
         
         <div class="section__precios--tarjetas">
             <div class="tarjetas">
                 <button class="button__precios">
                     <div class="button__texto">
-                        <span>Pagando con tarjeta de Banco Santander 10% de descuento</span>
+                        <span style="color: rgb(58, 57, 57);">Pagando con tarjeta de Banco Santander 10% de descuento</span>
                     </div>    
                     <img src="../imagenes/Tarjeta Santander.png" alt="Tarjeta Santander">
                 </button>
 
                 <button class="button__precios">
                     <div class="button__texto">
-                        <span>Pagando con tarjeta de Banco Provincia 20% de descuento</span>
+                        <span style="color: rgb(58, 57, 57);">Pagando con tarjeta de Banco Provincia 20% de descuento</span>
                     </div>    
                     <img src="../imagenes/Tarjeta Provincia.png" alt="Tarjeta Provincia">
                 </button>
 
                 <button class="button__precios">
                     <div class="button__texto">
-                        <span>Pagando con tarjeta de Banco hSBC 30% de descuento</span>
+                        <span style="color: rgb(58, 57, 57);">Pagando con tarjeta de Banco hSBC 30% de descuento</span>
                     </div>    
                     <img src="../imagenes/Tarjeta HSBC.png" alt="Tarjeta HSBC">
                 </button>
 
                 <button class="button__precios">
                     <div class="button__texto">
-                        <span>Pagando con tarjeta de Banco hSBC 40% de descuento</span>
+                        <span style="color: rgb(58, 57, 57);">Pagando con tarjeta de Banco hSBC 40% de descuento</span>
                     </div>    
                     <img src="../imagenes/Tarjeta ICBC.png" alt="Tarjeta ICBC">
                 </button>
@@ -111,6 +111,56 @@
         
     </section>
 
+    <section class="section__precios--pagos">
+        <div class="precios__bancos">
+            <ul>
+                <li><img src="../imagenes/visa.png" alt="Entidad financiera Visa"></li>
+                <li><img src="../imagenes/mastercard.png" alt="Entidad financiera Mastercard"></li>
+                <li><img src="../imagenes/americanex.png" alt="Entidad financiera American Express"></li>
+                <li><img src="../imagenes/paypal.png" alt="Paypal"></li>
+            </ul>
+        </div>
+
+        <div class="wrapper">
+            <div class="payment">
+              <div class="payment-logo">
+                <img src="../imagenes/tarjeta-de-credito.png" style="border: none;" alt="Logo de tarjeta de credito">
+              </div>
+              
+              
+              <h2>Ingrese su tarjeta</h2>
+              <div class="form">
+                <div class="card space icon-relative">
+                  <label class="label">Titular de la tarjeta:</label>
+                  <input type="text" class="input" placeholder="Nombre de usario">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="card space icon-relative">
+                  <label class="label">Numero de tarjeta:</label>
+                  <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="0000 0000 0000 0000">
+                  <i class="far fa-credit-card"></i>
+                </div>
+                <div class="card-grp space">
+                  <div class="card-item icon-relative">
+                    <label class="label">Vencimiento:</label>
+                    <input type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00">
+                    <i class="far fa-calendar-alt"></i>
+                  </div>
+                  <div class="card-item icon-relative">
+                    <label class="label">CCV:</label>
+                    <input type="text" class="input" data-mask="000" placeholder="000">
+                    <i class="fas fa-lock"></i>
+                  </div>
+                </div>
+                  
+                <div class="btn">
+                  Pagar
+                </div> 
+                
+              </div>
+            </div>
+          </div>
+    </section>
 
 
     <footer class="bg-dark text-white pt-5 pb-4 footer__precios">
@@ -230,6 +280,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
 
     </body>
 </html>

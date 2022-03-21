@@ -127,6 +127,26 @@
     border-top: 1px outset;
     border-radius: 5px; }
 
+.header__nosotros {
+  grid-area: header__nosotros;
+  background: url(../fondos/fondo2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 610px; }
+  .header__nosotros .header__content {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header__nosotros .header__content:hover {
+      background-color: rgba(41, 40, 40, 0.171); }
+    .header__nosotros .header__content .header__logo img {
+      width: 250px;
+      height: 160px;
+      margin-left: 30px; }
+
 * {
   padding: 0;
   margin: 0;
@@ -168,7 +188,6 @@
   font-size: 18px;
   color: white;
   font-weight: 500; }
-
 
 @media screen and (min-width: 0px) and (max-width: 320px) {
   .header__logandnav {
@@ -344,31 +363,36 @@
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "header__nosotros   header__nosotros  header__nosotros"
  "section__nosotros  section__nosotros section__nosotros"
- "section__nosotros2  section__nosotros2 section__nosotros2"
+ "section__nosotros2 section__nosotros2 section__nosotros2"
  "footer__nosotros   footer__nosotros  footer__nosotros"; }
 
-.header__nosotros {
+ .header__nosotros{
   grid-area: header__nosotros;
   background: url(../fondos/fondo2.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   width: 100%;
-  height: 610px; }
+  height: 610px;}
 
-.header__content {
+.header__content{
+  
   height: 100px;
+      
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+      
+  }
+.header__content:hover{
+  background-color: rgba(41, 40, 40, 0.171);
+}
 
-.header__content:hover {
-  background-color: rgba(41, 40, 40, 0.171); }
-
-.header__logo img {
+.header__logo img{
   width: 250px;
   height: 160px;
-  margin-left: 30px; }
+  margin-left: 30px;
+}
 
 .header__nav ul {
   list-style-type: none;
@@ -625,159 +649,134 @@ input:valid ~ label {
 .section__nosotros--texto2 a:hover, .section__nosotros--texto3 a:hover {
   transform: rotate(360deg) scale(1.3, 1.3); }
 
-  .section__nosotros2{
-    grid-area: section__nosotros2;
-    background: url(../fondos/fondonosotros.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 2;
-  }
-  
-  .nosotros__card {
-    background: #fff;
-    border: 4px;
-    box-shadow: 0px 14px 80px rgba(131, 135, 224, 0.5);
-    width: 1000px;
-    height: 370px;
-    margin: 70px;
-    display: flex;
-    flex-direction: row;
-    border-radius: 15px;
-    position: relative;
-  }
-  
-  .nosotros__card h2 {
-    margin: 0;
-    padding: 0 1rem;
-  }
-  
-  .nosotros__card .title {
-    padding: 1rem;
-    text-align: right;
-    color: #2d7ef9;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
-  .desc p{
-    font-size: 13px;
-  }
-  
-  .img-avatar{
-    width: 90px;
-    height: 90px;
-    position: absolute;
-    border-radius: 50%;
-    border: 6px solid white;
-    top: 15px;
-    left: 170px;
-  }
-  
-  .img-avatar img {
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .portada {
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-position: bottom center;
-    background-size: cover;
-  }
-  
-  .portada img {
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-  }
-  
-  .card-text {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-  
-  .title-total {
-    padding: 2.5em 1.5em 1.5em 1.5em;
-  }
-  
-  path {
-    fill: white;
-  }
-  
-  .img-portada {
-    width: 100%;
-  }
-  
-  .nosotros__card .desc {
-    padding: 0.5rem 1rem;
-    font-size: 12px;
-    text-align: justify;
-  }
-  
-  .nosotros__card .actions {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    padding: 0.5rem 1rem;
-  }
-  
-  button {
-    border: none;
-    background: none;
-    font-size: 25px;
-    color: #2d7ef9;
-    cursor: pointer;
-    transition: 0.5s;
-  }
-  
-  button:hover {
-    color: #0365f6;
-  }
-  
-  .nosotros__descripcion p{
-    color: white;
-    font-size: 25px;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-    text-shadow: 0px 5px 15px  rgba(131, 135, 224, 0.5);
-  }
-  
-  .nosotros__descripcion i{
-    font-size: 30px;
-    color: rgb(75, 194, 75);
-    transition: .3s;
-  }
-  
-  .nosotros__descripcion button:hover i{
-    color: green;
-  }
-  
-  .nosotros__descripcion button:hover span{
-    color: green;
-  }
-  
-  .nosotros__descripcion a{
-    font-size: 25px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 5px;
-    margin-left: 120px;
-  }
-  
-  .nosotros__descripcion span{
-    color: rgb(75, 194, 75);
-    font-family: 'Times New Roman', Times, serif;
-    transition: .3s;
-  }
+.section__nosotros2 {
+  grid-area: section__nosotros2;
+  background: url(../fondos/fondonosotros.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nosotros__card {
+  background: #fff;
+  border: 4px;
+  box-shadow: 0px 14px 80px rgba(131, 135, 224, 0.5);
+  width: 1000px;
+  height: 370px;
+  margin: 70px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  position: relative; }
+
+.nosotros__card h2 {
+  margin: 0;
+  padding: 0 1rem; }
+
+.nosotros__card .title {
+  padding: 1rem;
+  text-align: right;
+  color: #2d7ef9;
+  font-weight: bold;
+  font-size: 14px; }
+
+.desc p {
+  font-size: 13px; }
+
+.img-avatar {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  border-radius: 50%;
+  border: 6px solid white;
+  top: 15px;
+  left: 170px; }
+
+.img-avatar img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%; }
+
+.portada {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-position: bottom center;
+  background-size: cover; }
+
+.portada img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px; }
+
+.card-text {
+  display: grid;
+  grid-template-columns: 1fr 2fr; }
+
+.title-total {
+  padding: 2.5em 1.5em 1.5em 1.5em; }
+
+path {
+  fill: white; }
+
+.img-portada {
+  width: 100%; }
+
+.nosotros__card .desc {
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+  text-align: justify; }
+
+.nosotros__card .actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 0.5rem 1rem; }
+
+button {
+  border: none;
+  background: none;
+  font-size: 25px;
+  color: #2d7ef9;
+  cursor: pointer;
+  transition: 0.5s; }
+
+button:hover {
+  color: #0365f6; }
+
+.nosotros__descripcion p {
+  color: white;
+  font-size: 25px;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  text-shadow: 0px 5px 15px rgba(131, 135, 224, 0.5); }
+
+.nosotros__descripcion i {
+  font-size: 30px;
+  color: #4bc24b;
+  transition: .3s; }
+
+.nosotros__descripcion button:hover i {
+  color: green; }
+
+.nosotros__descripcion button:hover span {
+  color: green; }
+
+.nosotros__descripcion a {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+  margin-left: 120px; }
+
+.nosotros__descripcion span {
+  color: #4bc24b;
+  font-family: 'Times New Roman', Times, serif;
+  transition: .3s; }
 
 @media screen and (min-width: 0px) and (max-width: 320px) {
   .header__content {
@@ -800,11 +799,10 @@ input:valid ~ label {
     background: none; }
   .header__nav {
     background-color: rgba(0, 0, 0, 0.534);
-    margin: 0px 5px;
     border-radius: 3px;
     height: 85px; }
   .header__nav a {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold; }
   .section__nosotros--textos {
     flex-wrap: nowrap;
@@ -842,7 +840,76 @@ input:valid ~ label {
   .footer__info {
     display: flex;
     flex-direction: column;
-    text-align: center; } }
+    text-align: center; } 
+  
+    .section__nosotros2 {
+      grid-area: section__nosotros2;
+      background: url(../fondos/fondonosotros.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;}
+    
+      .nosotros__card {
+        background: #fff;
+        border: 4px;
+        box-shadow: 0px 14px 80px rgba(131, 135, 224, 0.5);
+        width: 1000px;
+        height: 380px; 
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 15px;
+        position: relative; }
+      
+      .nosotros__card .title {
+        padding: 1rem;
+        text-align: right;
+        color: #2d7ef9; 
+        font-weight: bold;
+        font-size: 10px; }
+      
+      .desc p {
+        font-size: 8.7px; 
+        font-weight: bold;}
+      
+      .img-avatar {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        border-radius: 50%;
+        border: 6px solid white; 
+        top: 15px;
+        left: 55px; }
+      
+      .portada {
+        width: 100%;
+        height: 92.5%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px; 
+        background-position: bottom center;
+        background-size: cover; }
+      
+      .nosotros__descripcion p {
+        color: white;
+        font-size: 27px; 
+        margin: 20px;
+        text-align: center;
+        font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+        text-shadow: 0px 5px 15px rgba(131, 135, 224, 0.5); }
+      
+      .nosotros__descripcion a {
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none; 
+        padding: 5px;
+        margin-left: 46px; }
+
+  }
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
   .header__content {
@@ -904,7 +971,76 @@ input:valid ~ label {
   .footer__info {
     display: flex;
     flex-direction: column;
-    text-align: center; } }
+    text-align: center; } 
+  
+    .section__nosotros2 {
+      grid-area: section__nosotros2;
+      background: url(../fondos/fondonosotros.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;}
+    
+      .nosotros__card {
+        background: #fff;
+        border: 4px;
+        box-shadow: 0px 14px 80px rgba(131, 135, 224, 0.5);
+        width: 1000px;
+        height: 380px; 
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 15px;
+        position: relative; }
+      
+      .nosotros__card .title {
+        padding: 1rem;
+        text-align: right;
+        color: #2d7ef9; 
+        font-weight: bold;
+        font-size: 10px; }
+      
+      .desc p {
+        font-size: 10px; 
+        font-weight: bold;}
+      
+      .img-avatar {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        border-radius: 50%;
+        border: 6px solid white; 
+        top: 15px;
+        left: 70px; }
+      
+      .portada {
+        width: 100%;
+        height: 93.7%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px; 
+        background-position: bottom center;
+        background-size: cover; }
+      
+      .nosotros__descripcion p {
+        color: white;
+        font-size: 30px; 
+        margin: 20px;
+        text-align: center;
+        font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+        text-shadow: 0px 5px 15px rgba(131, 135, 224, 0.5); }
+
+      .nosotros__descripcion a {
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none; 
+        padding: 5px;
+        margin-left: 70px; }
+  
+  }
 
 @media screen and (min-width: 376px) and (max-width: 425px) {
   .header__content {
@@ -962,7 +1098,77 @@ input:valid ~ label {
   .footer__info {
     display: flex;
     flex-direction: column;
-    text-align: center; } }
+    text-align: center; } 
+  
+    .section__nosotros2 {
+      grid-area: section__nosotros2;
+      background: url(../fondos/fondonosotros.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;}
+    
+      .nosotros__card {
+        background: #fff;
+        border: 4px;
+        box-shadow: 0px 14px 80px rgba(131, 135, 224, 0.5);
+        width: 1000px;
+        height: 380px; 
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 15px;
+        position: relative; }
+      
+      .nosotros__card .title {
+        padding: 1rem;
+        text-align: right;
+        color: #2d7ef9; 
+        font-weight: bold;
+        font-size: 11px; }
+      
+      .desc p {
+        font-size: 11px; 
+        font-weight: bold;}
+      
+      .img-avatar {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        border-radius: 50%;
+        border: 6px solid white; 
+        top: 15px;
+        left: 90px; }
+      
+      .portada {
+        width: 100%;
+        height: 93.5%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px; 
+        background-position: bottom center;
+        background-size: cover; }
+      
+      .nosotros__descripcion p {
+        color: white;
+        font-size: 30px; 
+        margin: 20px;
+        text-align: center;
+        font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+        text-shadow: 0px 5px 15px rgba(131, 135, 224, 0.5); }
+
+      
+      .nosotros__descripcion a {
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none; 
+        padding: 5px;
+        margin-left: 100px; }
+  
+  }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .header__nosotros {
@@ -981,7 +1187,35 @@ input:valid ~ label {
     width: 70%;
     top: 22%;
     left: 15%;
-    margin-right: 40px; } }
+    margin-right: 40px; }
+
+    .section__nosotros2 {
+      grid-area: section__nosotros2;
+      background: url(../fondos/fondonosotros.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;}
+    
+    .nosotros__descripcion p {
+      color: white;
+      text-align: center;
+      font-size: 25px;
+      font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+      text-shadow: 0px 5px 15px rgba(131, 135, 224, 0.5); }
+    
+    .nosotros__descripcion a {
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none; 
+      padding: 5px;
+      margin-left: 270px; }
+  
+  }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .section__form {
@@ -997,7 +1231,36 @@ input:valid ~ label {
   .section__nosotros--texto2 a {
     width: 70%; }
   .section__nosotros--texto3 a {
-    width: 70%; } }
+    width: 70%; } 
+  
+    .nosotros__card {
+      background: #fff;
+      border: 4px;
+      box-shadow: 0px 14px 80px rgba(131, 135, 224, 0.5);
+      width: 1000px;
+      height: 380px; 
+      margin: 49px;
+      display: flex;
+      flex-direction: row;
+      border-radius: 15px;
+      position: relative; }
+    
+    .img-avatar {
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      border-radius: 50%;
+      border: 6px solid white; 
+      top: 15px;
+      left: 120px; }
+
+    .nosotros__descripcion a {
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none; 
+      padding: 5px;
+      margin-left: 60px; }
+  }
 
 .body__productos {
   display: grid;
@@ -1123,9 +1386,10 @@ input:valid ~ label {
   display: grid;
   overflow-x: hidden;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
   grid-template-areas: "header__precios header__precios header__precios"
  "section__precios section__precios section__precios"
+ "section__precios--pagos section__precios--pagos section__precios--pagos"
  "footer__precios footer__precios footer__precios"; }
 
 .header__precios {
@@ -1144,11 +1408,12 @@ input:valid ~ label {
   background-position: center center;
   background-size: cover; }
 
-.section__precios--content p {
-  font-size: 40px;
+.section__precios--content h2 {
+  font-size: 70px;
+  text-align: center;
   font-weight: 600;
   font-family: 'Times New Roman', Times, serif;
-  margin: 20px 0px 5px 30px; }
+  margin: 40px 0px; }
 
 .section__precios--tarjetas {
   display: flex;
@@ -1184,7 +1449,6 @@ input:valid ~ label {
   height: 250px; }
 
 .button__precios span {
-  color: white;
   font-size: 18px;
   font-weight: 700; }
 
@@ -1207,6 +1471,171 @@ input:valid ~ label {
 .button__precios:hover .button__texto {
   left: 70%;
   opacity: 1; }
+
+.section__precios--pagos{
+  grid-area: section__precios--pagos;
+  margin: auto;
+  background: url(../fondos/fondoprecios.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper{
+  width: 70%;
+  margin-right: 70px;
+}
+
+.payment{
+  background: #f8f8f8;
+  max-width: 360px;
+  margin: 80px auto;
+  height: auto;
+  padding: 35px;
+  padding-top: 70px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.payment h2{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #0d3c61;
+}
+
+.form .label{
+  display: block;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+.input{
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width: 48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
+}
+
+.btn{
+  width: 300px;
+  margin-top: 40px;
+  background: #2196F3;
+  padding: 12px;
+  text-align: center;
+  color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.payment-logo{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #f8f8f8;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: center;
+  line-height: 85px;
+}
+
+.payment-logo:before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background: #2196F3;
+  border-radius: 50%;
+}
+
+.payment-logo img{
+  position: relative;
+  width: 70px;
+  height: 70px;}
+
+
+.precios__bancos{
+  width: 100%;
+  margin: 50px 100px;
+  overflow: hidden;
+}
+
+.precios__bancos ul{
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  width: 400%;
+
+  animation: cambio 20s infinite alternate;
+}
+
+.precios__bancos li{
+  list-style: none;
+  width: 100%;
+}
+
+.precios__bancos img{
+  width: 80%;
+  margin-left: 60px;
+}
+
+@keyframes cambio{
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+
+  25% {margin-left: -100%;}
+  40% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}
+  100% {margin-left: -300;}
+}
 
 .footer__precios {
   grid-area: footer__precios;
@@ -1244,7 +1673,72 @@ input:valid ~ label {
     top: -40px; }
   .button__precios:hover .button__texto {
     top: 70%;
-    left: 0%; } }
+    left: 0%; } 
+  
+    .section__precios--pagos{
+      grid-area: section__precios--pagos;
+      margin: auto;
+      background: url(../fondos/fondoprecios.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .wrapper{
+      width: 95%;
+      margin-left: 70px;
+    }
+    
+    .btn{
+      width: 260px;
+      margin-top: 40px;
+      background: #2196F3;
+      padding: 12px;
+      text-align: center;
+      color: #f8f8f8;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .precios__bancos{
+      width: 100%;
+      margin: 50px 100px;
+      overflow: hidden;
+    }
+
+    .precios__bancos{
+      width: 100%;
+      margin: 50px 100px;
+      overflow: hidden;
+    }
+    
+    .precios__bancos ul{
+      padding: 0%;
+      display: flex;
+      align-items: center;
+      width: 400%;
+    
+      animation: cambio 20s infinite alternate;
+    }
+    
+    .precios__bancos li{
+      list-style: none;
+      width: 100%;
+    }
+    
+    .precios__bancos img{
+      width: 100%;
+      margin-left: 0px;
+    }
+  
+  
+  }
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
   .header__precios {
@@ -1274,7 +1768,71 @@ input:valid ~ label {
     top: -40px; }
   .button__precios:hover .button__texto {
     top: 70%;
-    left: 0%; } }
+    left: 0%; } 
+  
+    .section__precios--pagos{
+      grid-area: section__precios--pagos;
+      margin: auto;
+      background: url(../fondos/fondoprecios.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .wrapper{
+      width: 90%;
+      margin-left: 80px;
+    }
+    
+    .btn{
+      width: 250px;
+      margin-top: 40px;
+      background: #2196F3;
+      padding: 12px;
+      text-align: center;
+      color: #f8f8f8;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .precios__bancos{
+      width: 100%;
+      margin: 50px 100px;
+      overflow: hidden;
+    }
+
+    .precios__bancos{
+      width: 100%;
+      margin: 50px 100px;
+      overflow: hidden;
+    }
+    
+    .precios__bancos ul{
+      padding: 0%;
+      display: flex;
+      align-items: center;
+      width: 400%;
+    
+      animation: cambio 20s infinite alternate;
+    }
+    
+    .precios__bancos li{
+      list-style: none;
+      width: 100%;
+    }
+    
+    .precios__bancos img{
+      width: 90%;
+      margin-left: 10px;
+    }
+  
+  }
 
 @media screen and (min-width: 376px) and (max-width: 425px) {
   .header__precios {
@@ -1299,13 +1857,99 @@ input:valid ~ label {
     top: -40px; }
   .button__precios:hover .button__texto {
     top: 70%;
-    left: 0%; } }
+    left: 0%; } 
+  
+    .section__precios--pagos{
+      grid-area: section__precios--pagos;
+      margin: auto;
+      background: url(../fondos/fondoprecios.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .wrapper{
+      width: 80%;
+      margin-left: 80px;
+    }
+    
+    .btn{
+      width: 250px;
+      margin-top: 40px;
+      background: #2196F3;
+      padding: 12px;
+      text-align: center;
+      color: #f8f8f8;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .precios__bancos{
+      width: 100%;
+      margin: 50px 100px;
+      overflow: hidden;
+    }
+
+    .precios__bancos{
+      width: 100%;
+      margin: 50px 100px;
+      overflow: hidden;
+    }
+    
+    .precios__bancos ul{
+      padding: 0%;
+      display: flex;
+      align-items: center;
+      width: 400%;
+    
+      animation: cambio 20s infinite alternate;
+    }
+    
+    .precios__bancos li{
+      list-style: none;
+      width: 100%;
+    }
+    
+    .precios__bancos img{
+      width: 80%;
+      margin-left: 30px;
+    }
+  
+  }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .header__precios {
     height: 620px; }
   .section__precios--tarjetas {
-    margin: auto 55px; } }
+    margin: auto 55px; } 
+  
+    .section__precios--pagos{
+      grid-area: section__precios--pagos;
+      margin: auto;
+      background: url(../fondos/fondoprecios.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .wrapper{
+      width: 70%;
+      margin-left: 100px;
+    }
+  
+  }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .header__precios {
