@@ -583,151 +583,111 @@ input:valid ~ label {
 
 .section__nosotros {
   grid-area: section__nosotros;
-  background: linear-gradient(135deg , #562b05, rgb(175, 175, 175));
-  background-size: 500%;
-  animation: fanimado 10s infinite;
+  background: url(../fondos/fondonosotros.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
    }
-
-@keyframes fanimado{
-  0%{
-    background-position: 0% 50%;
-  }
-  50%{
-    background-position: 100% 50%;
-  }
-  100%{
-    background-position: 0% 50%;
-  }
-}
 
 .section__nosotros--textos {
   color: white;
   width: 100%;
   height: 100%;
+  margin: 20px 0px;
+  font-family: sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+
+.nosotros__card--textos{
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+
+.nosotros__card--textos .face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.nosotros__card--textos .front{
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.nosotros__card--textos .front img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nosotros__card--textos .front h3{
+  position: absolute;
   bottom: 0%;
-  top: 30%;
-  left: 5%;
-  font-family: 'Bebas Neue', cursive;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center; }
-
-.section__nosotros--texto1 {
-  background-color: #272727;
-  bottom: 30%;
-  border-style: solid;
-  border-color: yellow;
-  border-radius: 10%;
-  opacity: 0.70;
-  height: 47%;
-  width: 40%;
-  margin: 3% 0% 0% 7%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-
-.section__nosotros--texto1 h2 {
-  font-size: 35px;
-  text-align: center; }
-
-.section__nosotros--texto1 p {
+  width: 100%;
+  height: 45px;
   font-size: 20px;
+  line-height: 45px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .4);
   text-align: center;
-  margin-top: 25px; }
+}
 
-.section__nosotros--texto2 {
-  background-color: #272727;
-  bottom: 30%;
-  border-style: solid;
-  border-color: yellow;
-  border-radius: 10%;
-  opacity: 0.70;
-  height: 47%;
-  width: 40%;
-  margin: 3% 0% 0% 5%;
+.nosotros__card--textos .back{
+  transform: perspective(600px) rotateY(180deg);
+  background-color: rgb(3, 35, 54);
+  padding: 15px;
+  color: #f3f3f3;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
 
-.section__nosotros--texto2 h2 {
-  font-size: 35px;
-  text-align: center; }
-
-.section__nosotros--texto2 p {
+.nosotros__card--textos .back h3{
   font-size: 20px;
-  text-align: center; }
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
 
-.section__nosotros--texto2 a {
+.nosotros__card--textos .back p{
+  letter-spacing: 1px;
+}
+
+.nosotros__card--textos:hover .front{
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.nosotros__card--textos:hover .back{
+  transform: perspective(600px) rotateY(360deg);
+}
+
+.nosotros__card--textos .back .link{
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.nosotros__card--textos .back .link a{
+  color: #f3f3f3;
   text-decoration: none;
-  color: yellow;
-  font-size: 20px;
-  font-weight: bolder;
-  padding: 30px;
-  width: 60%;
-  text-align: center;
-  background-color: #272727;
-  border: 1px solid white;
-  border-radius: 5px;
-  transition: all .5s; }
+}
 
-.section__nosotros--texto2 .buton {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; }
+.nosotros__card--textos .back h3{
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
 
-.section__nosotros--texto3 {
-  background-color: #272727;
-  border-style: solid;
-  border-color: yellow;
-  border-radius: 10%;
-  opacity: 0.70;
-  height: 40%;
-  width: 40%;
-  margin: 3% 0% 22% 28%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-
-.section__nosotros--texto3 h2 {
-  font-size: 35px;
-  text-align: center; }
-
-.section__nosotros--texto3 p {
-  font-size: 20px;
-  text-align: center;
-  margin-top: 25px; }
-
-.section__nosotros--texto3 .buton {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; }
-
-.section__nosotros--texto3 a {
-  text-decoration: none;
-  color: yellow;
-  font-size: 20px;
-  font-weight: bolder;
-  padding: 30px;
-  width: 60%;
-  text-align: center;
-  background-color: #272727;
-  border: 1px solid white;
-  border-radius: 5px;
-  transition: all .5s; }
-
-.section__nosotros--texto1:hover, .section__nosotros--texto2:hover,
-.section__nosotros--texto3:hover {
-  background-color: yellow;
-  opacity: 1;
-  color: black; }
-
-.section__nosotros--texto2 a:hover, .section__nosotros--texto3 a:hover {
-  transform: rotate(360deg) scale(1.3, 1.3); }
 
 .section__nosotros2 {
   grid-area: section__nosotros2;
@@ -1012,34 +972,15 @@ button:hover {
     background: none; }
   .header__nav {
     background-color: rgba(0, 0, 0, 0.534);
-    margin: 0px 5px;
+    margin: 0px 0px;
     border-radius: 3px;
     height: 85px; }
   .header__nav a {
-    font-size: 17px; }
+    font-size: 15px; }
   .section__nosotros--textos {
     flex-wrap: nowrap;
     flex-direction: column;
     justify-items: center; }
-  .section__nosotros--texto1, .section__nosotros--texto2, .section__nosotros--texto3 {
-    height: 60%;
-    width: 85%;
-    margin-bottom: 10px;
-    margin-right: 30px; }
-  .section__nosotros--texto1 h2, .section__nosotros--texto2 h2, .section__nosotros--texto3 h2 {
-    font-size: 23px; }
-  .section__nosotros--texto1 p, .section__nosotros--texto2 p, .section__nosotros--texto3 p {
-    font-size: 20px; }
-  .section__nosotros--texto3 {
-    margin-left: 30px; }
-  .section__nosotros--texto2 a {
-    width: auto; }
-  .section__nosotros--texto3 a {
-    width: auto; }
-  .section__nosotros--texto2 a, .section__nosotros--texto3 a {
-    padding: 20px;
-    width: auto;
-    margin: 10px 0px; }
   footer {
     flex-direction: column;
     align-items: center; }
@@ -1133,7 +1074,7 @@ button:hover {
   .header__logo img {
     width: 250px;
     height: 160px;
-    margin-left: 30px; }
+    margin-left: 50px; }
   .section__form {
     width: 80%;
     top: 50%;
@@ -1142,31 +1083,12 @@ button:hover {
     background: none; }
   .header__nav {
     background-color: rgba(0, 0, 0, 0.534);
-    margin: 0px 5px;
+    margin: 0px 0px;
     border-radius: 3px; }
   .section__nosotros--textos {
     flex-wrap: nowrap;
     flex-direction: column;
     justify-items: center; }
-  .section__nosotros--texto1, .section__nosotros--texto2, .section__nosotros--texto3 {
-    height: 60%;
-    width: 80%;
-    margin-bottom: 10px;
-    margin-right: 30px; }
-  .section__nosotros--texto1 h2, .section__nosotros--texto2 h2, .section__nosotros--texto3 h2 {
-    font-size: 23px; }
-  .section__nosotros--texto1 p, .section__nosotros--texto2 p, .section__nosotros--texto3 p {
-    font-size: 20px; }
-  .section__nosotros--texto3 {
-    margin-left: 30px; }
-  .section__nosotros--texto2 a {
-    width: auto; }
-  .section__nosotros--texto3 a {
-    width: auto; }
-  .section__nosotros--texto2 a, .section__nosotros--texto3 a {
-    padding: 20px;
-    width: auto;
-    margin: 10px 0px; }
   footer {
     flex-direction: column;
     align-items: center; }
@@ -1255,14 +1177,6 @@ button:hover {
     height: 620px; }
   .section__nosotros {
     width: 768px; }
-  .section__nosotros--texto1, .section__nosotros--texto2 {
-    height: 45%; }
-  .section__nosotros--texto3 {
-    height: 43%; }
-  .section__nosotros--texto2 a {
-    width: auto; }
-  .section__nosotros--texto3 a {
-    width: auto; }
   .section__form {
     width: 70%;
     top: 22%;
@@ -1304,14 +1218,6 @@ button:hover {
     left: 28%; }
   .section__nosotros {
     width: 1024px; }
-  .section__nosotros--texto1, .section__nosotros--texto2 {
-    height: 45%; }
-  .section__nosotros--texto3 {
-    height: 43%; }
-  .section__nosotros--texto2 a {
-    width: 70%; }
-  .section__nosotros--texto3 a {
-    width: 70%; } 
   
     .nosotros__card {
       background: #fff;
@@ -1483,9 +1389,10 @@ button:hover {
 
 .section__precios {
   grid-area: section__precios;
-  background: linear-gradient(135deg, #d5b59c, #eed09d);
-  background-size: 500%;
-  animation: fanimado 10s infinite; }
+  background: url(../fondos/fondocredito.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
 
 .section__precios--content h2 {
   font-size: 70px;
@@ -1496,8 +1403,8 @@ button:hover {
 
 .section__precios--tarjetas {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  flex-direction: row;
   flex-wrap: wrap; }
 
 .tarjetas button {
@@ -1506,8 +1413,7 @@ button:hover {
   justify-content: center;
   width: 600px;
   height: 300px;
-  margin: auto 30px;
-  margin-bottom: 20px;
+  margin: auto 35px;
   background: none;
   color: white;
   font-size: 15px;
