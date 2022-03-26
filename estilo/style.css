@@ -1961,6 +1961,8 @@ button:hover {
     top: 70%;
     left: 0%; } }
 
+
+  /*-------------------------------CONTACTOS-----------------------------*/
 .header__contactos {
   width: 100%;
   height: auto;
@@ -1976,26 +1978,27 @@ button:hover {
   transform: translateX(-50%) translateY(-50%);
   z-index: -1; }
 
-.contactos__content form {
-  width: 600px;
-  background: rgba(36, 48, 60, 0.7);
-  padding: 50px;
-  margin: 25px 0px 50px 350px;
-  border-radius: 4px;
-  color: white; }
+  .container__nosotros {
+    height: 28em;
+    width: 55em;
+    margin: 3em 15em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
 
-.contactos__content p {
-  font-size: 25px;
-  font-weight: 700;
-  font-family: monospace;
-  color: white;
-  margin: 40px 150px 0px 20px; }
+.info-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    background: rgba(36, 48, 60, 0.7);
+}
 
-.contactos__content h3 {
-  font-size: 28px;
-  margin-bottom: 25px; }
-
-.form__texto input {
+.info-container input {
   width: 85%;
   background: #24303c;
   padding: 10px;
@@ -2005,40 +2008,89 @@ button:hover {
   font-size: 15px;
   color: white; }
 
-.form__radio {
-  margin-top: 20px; }
+  .info-container h2{
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+}
 
-.form__radio input {
-  margin-left: 40px; }
-
-.form__combo {
-  margin-bottom: 40px;
-  margin-top: 50px; }
-
-.form__combo select {
-  margin-left: 15px;
-  height: 25px;
-  width: 200px; }
+.info-container span{
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+}
 
 #registrarme {
-  width: 70%;
+  width: 85%;
   background: #1f53c5;
   border: none;
+  margin-top: 20px;
   padding: 12px;
   color: white; }
 
-#registrarme:hover {
-  background-color: green; }
+  #registrarme:hover {
+    background-color: green; }
 
-#cancelar {
-  width: 25%;
-  background: #1f53c5;
-  border: none;
-  padding: 12px;
-  color: white; }
+.info-container a{
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+  margin-top: 10px;
+}
 
-#cancelar:hover {
-  background-color: red; }
+.info-container a:hover{
+  color: rgba(128, 128, 128, 0.6);
+}
+
+.sitios-container{
+  width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    background: rgba(36, 48, 60);
+}
+
+.sitios-container h2{
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: white;
+}
+
+.social-login-element {
+  width: 12.5rem;
+  height: 3.75rem;
+  font-size: 1.5rem;
+  margin: 15px auto;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-login-element img {
+  width: 1.875rem;
+  height: 1.875rem;
+  position: relative;
+  top: 0;
+  left: -0.625rem;
+}
+
+.social-login-element:hover {
+  background-color: #fff;
+  color: black;
+}
 
 .header__info--contactos {
   color: white;
@@ -2090,21 +2142,24 @@ button:hover {
     margin: 10px 20px 10px 20px; }
   #registrarme {
     width: 60%; }
-  #cancelar {
-    width: 30%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white; }
-  .contactos__content form {
-    width: 310px;
-    margin: 25px 0px 50px 5px;
-    padding: 10px; }
-  .header__info--content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.753); } }
+  
+    .container__nosotros {
+      height: 55em;
+      width: 45em;
+      margin: 0em 0em 0em 22.5em;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .info-container span{
+      color: white;
+      font-size: 16px;
+      font-weight: 200;
+    }
+  
+  }
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
   .header__contactos {
@@ -2137,21 +2192,26 @@ button:hover {
     margin: 10px 20px 10px 20px; }
   #registrarme {
     width: 60%; }
-  #cancelar {
-    width: 30%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white; }
-  .contactos__content form {
-    width: 370px;
-    margin: 25px 0px 50px 3px;
-    padding: 10px; }
-  .header__info--content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.753); } }
+
+    .container__nosotros {
+      height: 55em;
+      width: 45em;
+      margin: 0em 0em 0em 22.5em;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .info-container span{
+      color: white;
+      font-size: 16px;
+      font-weight: 200;
+    }
+  
+  
+  
+  }
 
 @media screen and (min-width: 376px) and (max-width: 425px) {
   .header__contactos {
@@ -2183,22 +2243,23 @@ button:hover {
     font-size: 23px;
     margin: 10px 20px 10px 20px; }
   #registrarme {
-    width: 60%; }
-  #cancelar {
-    width: 30%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white; }
-  .contactos__content form {
-    width: 415px;
-    margin: 25px 0px 50px 5px;
-    padding: 10px; }
-  .header__info--content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.753); } }
+    width: 60%; } 
+    .container__nosotros {
+      height: 55em;
+      width: 45em;
+      margin: 0em 0em 0em 23em;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .info-container span{
+      color: white;
+      font-size: 16px;
+      font-weight: 200;
+    }
+  }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .header__info--contactos {
@@ -2207,18 +2268,40 @@ button:hover {
     display: none; }
   .header__logandnav:hover {
     background-color: rgba(0, 0, 0, 0); }
-  .contactos__content form {
-    margin: 25px 0px 50px 85px; } }
+  
+    .container__nosotros {
+      height: 28em;
+      width: 45em;
+      margin: 3em 1.5em;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+
+    .info-container span{
+      color: white;
+      font-size: 16px;
+      font-weight: 200;
+    }
+  }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .header__logandnav {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-  .contactos__content form {
-    margin: 25px 0px 50px 220px; }
-  .header__info--content {
-    font-size: 18px; } }
+  
+    .container__nosotros {
+      height: 28em;
+      width: 55em;
+      margin: 3em 4em;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+  }
 
 .footer__nosotros {
   grid-area: footer__nosotros;

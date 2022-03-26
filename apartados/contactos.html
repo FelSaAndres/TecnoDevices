@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Completa el formulario de registro para conocer todos nuestros productos y beneficios">
     <meta name="keywords" content="Tecno, Devices, Barato, Pagos, Beneficios, Descuento, Exclusivos, Tarjeta">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="../imagenes/bios.png" type="image/x-icon">
     <link rel="stylesheet" href="../estilo/style.css">
     <title>Unite a nosotros</title>
@@ -42,56 +43,43 @@
 
         <div class="contactos__content">
 
-            <p>Registrate y genera tu usuario para poder recibir ofertas exclusivas de nuestros productos mas destacados</p>
-    
-    
-            <form>
-                <h3>Complete el formulario para registrarse</h3>
-                
-                <div class="contactos__formulario">
-                    
-    
-                    <div class="form__texto">
-    
-                        <input  type="text" name="nombre" placeholder="Ingrese su nombre">
-                        <input  type="text" name="apellido" placeholder="Ingrese su apellido">
+            <div class="container__nosotros">
+                <div class="info-container">
+                  <h2>Registrarte</h2>
+                  <input  type="text" name="nombre completo" placeholder="Nombre y apellido">
             
-                        <input  type="email" name="mail" id="email" placeholder="Ingrese su e-mail">
-                        <input  type="password" name="pass" id="contraseña" placeholder="Contraseña">
-    
-                    </div>
-                
-                    <div class="form__radio">
-                        <label for="sex">Sexo</label>
-                        <input type="radio" name="sexo" id="hombre" value="hombre">
-                        <label for="hombre">Masculino</label>
-                        <input type="radio" name="sexo" id="mujer" value="mujer">
-                        <label for="mujer">Femenino</label>
-                    </div>
+                    <input  type="email" name="mail" id="email" placeholder="Correo electronico">
+                    <input  type="password" name="pass" id="contraseña" placeholder="Contraseña">
+                    <input  type="password" name="pass" id="contraseña" placeholder="Vuelva a ingresar contraseña">
                     
-                    <div class="form__combo">
-    
-                        <label for="ciudad">Localidad</label>
-                        <select name="ciudad">
-                            <option>Elegir...</option>
-                            <option value="Capital Federal">CABA</option>
-                            <option value="Buenos Aires">Provincia</option>
-                            <option value="Entre Rios">Entre Rios</option>
-                            <option value="Mendoza">Mendoza</option>
-                            <option value="Cordoba">Cordoba</option>
-                            <option value="Jujuy">Jujuy</option>
-                            <option value="Salta">Salta</option>
-                        </select>
-    
-                    </div>
-    
-                    <div class="form__buttons">
-                        <input id="registrarme" type="submit" value="Registrarme">
-                        <input id="cancelar" type="reset" value="Cancelar">
-                    </div>
-    
+                    <span>Estoy de acuerdo con Terminos y Condiciones</span>
+
+                    <input id="registrarme" type="submit" value="Registrarme">
+
+                    <a href="./nosotros.html">Ya tengo un cuenta?</a>
                 </div>
-            </form>
+                <div class="sitios-container">
+                    <h2>Inicia Secion</h2>
+                    <div class="social-login-element">
+                        <img src="http://assets.stickpng.com/images/5a951939c4ffc33e8c148af2.png" alt="google-image">
+                        <span>Google</span>
+                    </div>
+                    <div class="social-login-element">
+                        <img src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202110facebooklogosocialsocialmedia-115707_115594.png" alt="facebook-image">
+                        <span>Facebook</span>
+                    </div>
+                    <div class="social-login-element">
+                        <img src="https://cdn.icon-icons.com/icons2/1584/PNG/512/3721672-instagram_108066.png" alt="facebook-image">
+                        <span>Instagram</span>
+                    </div>
+                    <div class="social-login-element">
+                        <img src="https://cdn.icon-icons.com/icons2/836/PNG/512/Twitter_icon-icons.com_66803.png" alt="facebook-image">
+                        <span>Twitter</span>
+                    </div>
+                </div>
+            </div>
+            
+
         </div>
 
         <div class="header__info--contactos">
