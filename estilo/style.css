@@ -581,6 +581,8 @@ input:valid ~ label {
 .section__form a:hover {
   text-decoration: underline; }
 
+/*-------------------------------------------------------------------------------------------------*/
+
 .section__nosotros {
   grid-area: section__nosotros;
   background: url(../fondos/fondonosotros.jpg);
@@ -687,7 +689,6 @@ input:valid ~ label {
   margin-top: 20px;
   letter-spacing: 2px;
 }
-
 
 .section__nosotros2 {
   grid-area: section__nosotros2;
