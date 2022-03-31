@@ -2093,6 +2093,59 @@ button:hover {
   color: black;
 }
 
+.terminosycondiciones{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "terminos1 terminos4"
+                       "terminos2 terminos3";
+  grid-gap: 10px;
+}
+
+.terminos1{
+  grid-area: terminos1;
+  background: rgba(36, 48, 60, 0.7);
+  border: 1px solid white;
+  border-radius: 5px;
+  color: rgb(206, 206, 206);
+  padding: 5px;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.terminos2{
+  grid-area: terminos2;
+  background: rgba(36, 48, 60, 0.7);
+  border: 1px solid white;
+  border-radius: 5px;
+  color: rgb(206, 206, 206);
+  padding: 5px;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.terminos3{
+  grid-area: terminos3;
+  background: rgba(36, 48, 60, 0.7);
+  border: 1px solid white;
+  border-radius: 5px;
+  color: rgb(206, 206, 206);
+  padding: 5px;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.terminos4{
+  grid-area: terminos4;
+  background: rgba(36, 48, 60, 0.7);
+  border: 1px solid white;
+  border-radius: 5px;
+  color: rgb(206, 206, 206);
+  padding: 5px;
+  margin-right: 50px;
+  text-align: center;
+}
+
 .header__info--contactos {
   color: white;
   font-weight: 700;
@@ -2159,6 +2212,34 @@ button:hover {
       font-size: 16px;
       font-weight: 200;
     }
+
+    .terminosycondiciones{
+      display: grid;
+      grid-template-columns: repeat(1, 2fr);
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: "terminos1"
+                           "terminos4"
+                           "terminos2"
+                           "terminos3";
+      grid-gap: 10px;
+      margin: 15px 40px 0px 50px;
+    }
+
+    .terminos1{
+      margin-left: 0px;
+    }
+    
+    .terminos2{
+      margin-left: 0px;
+    }
+    
+    .terminos3{
+      margin-right: 0px;
+    }
+    
+    .terminos4{
+      margin-right: 0px;
+    }
   
   }
 
@@ -2209,8 +2290,34 @@ button:hover {
       font-size: 16px;
       font-weight: 200;
     }
-  
-  
+    
+    .terminosycondiciones{
+      display: grid;
+      grid-template-columns: repeat(1, 2fr);
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: "terminos1"
+                           "terminos4"
+                           "terminos2"
+                           "terminos3";
+      grid-gap: 10px;
+      margin: 15px 40px 0px 50px;
+    }
+
+    .terminos1{
+      margin-left: 0px;
+    }
+    
+    .terminos2{
+      margin-left: 0px;
+    }
+    
+    .terminos3{
+      margin-right: 0px;
+    }
+    
+    .terminos4{
+      margin-right: 0px;
+    }
   
   }
 
@@ -2259,6 +2366,34 @@ button:hover {
       color: white;
       font-size: 16px;
       font-weight: 200;
+    }
+
+    .terminosycondiciones{
+      display: grid;
+      grid-template-columns: repeat(1, 2fr);
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: "terminos1"
+                           "terminos4"
+                           "terminos2"
+                           "terminos3";
+      grid-gap: 10px;
+      margin: 15px 50px 0px 60px;
+    }
+
+    .terminos1{
+      margin-left: 0px;
+    }
+    
+    .terminos2{
+      margin-left: 0px;
+    }
+    
+    .terminos3{
+      margin-right: 0px;
+    }
+    
+    .terminos4{
+      margin-right: 0px;
     }
   }
 
